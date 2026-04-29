@@ -9,6 +9,13 @@ const theme = createTheme({
     primary: {
       main: '#000', // your navbar color
     },
+    secondary: {
+      main: '#fff', // your text color
+      contrastText: '#000', // text color on secondary background
+    },
+    accent: {
+      main: '#FBBC05', // your accent color
+    },
   },
 });
 
