@@ -1,9 +1,15 @@
 import Navbar from './Navbar';
+import LandingContainer from './LandingContainer';
 import Message from './Message';
 
 function App() {
-  return <div><Navbar></Navbar></div>
-  return <div><Message></Message></div>;
+  return (
+    <>
+      <Navbar />
+      <LandingContainer />
+      <Message />
+    </>
+  );
 }
 
 export default App;
