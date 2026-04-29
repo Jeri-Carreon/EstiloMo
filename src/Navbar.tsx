@@ -35,7 +35,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" color="primary" sx={{ width: '100%' }}>
+    <AppBar position="static" color="primary" sx={{ width: '100%', borderBottom: '2px solid #FBBC05' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
             <Box
@@ -46,6 +46,7 @@ function ResponsiveAppBar() {
                 height: 80,
                 display: { xs: 'none', md: 'flex' },
                 mr: 2,
+                padding: 2, //To make the logo look better, adjust as needed
             }}
             />
 
@@ -94,7 +95,20 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    borderBottom: '2px solid transparent',
+                    '&:hover': {
+                      borderBottomColor: '#FBBC05',
+                      backgroundColor: 'transparent',
+                      '& .MuiTypography-root': {
+                        color: '#FBBC05',
+                      },
+                    },
+                  }}
+                >
                   <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
                 </MenuItem>
               ))}
@@ -114,7 +128,18 @@ function ResponsiveAppBar() {
                 <Button
                     key={page}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, mx: 2,color: 'white' }}
+                    sx={{ 
+                      my: 2, 
+                      mx: 2,
+                      color: 'white',
+                      borderBottom: '2px solid transparent',
+                      backgroundColor: 'transparent',
+                      '&:hover': {
+                        color: '#FBBC05',
+                        borderBottomColor: '#FBBC05',
+                        backgroundColor: 'transparent',
+                      },
+                    }}
                 >
                     {page}
                 </Button>
