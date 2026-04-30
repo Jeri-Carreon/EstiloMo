@@ -22,8 +22,8 @@ export default function BasicGrid() {
       sx={{ 
         flexGrow: 1,
         backgroundColor: '#ffffff',
-        paddingTop: 10,}}>
-      <Grid container spacing={5}>
+        paddingTop: 5,}}>
+      <Grid container spacing={3}>
         <Grid size={{ xs: 12, md: 6 }}>
           <Item>
             <h1 style={{ 

@@ -8,8 +8,9 @@ function App() {
     <>
       <Navbar />
       <Banner />
-      <AboutUsLanding />
       <OurServices />
+      <AboutUsLanding />
+
     </>
   );
 }
