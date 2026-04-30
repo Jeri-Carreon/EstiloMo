@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import Banner from './Banner';
-import LandingContainer from './LandingContainer';
+import AboutUsLanding from './AboutUsLanding';
 import Message from './Message';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <>
       <Navbar />
       <Banner />
-      <LandingContainer />
+      <AboutUsLanding />
       <Message />
     </>
   );

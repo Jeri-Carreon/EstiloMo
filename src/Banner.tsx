@@ -46,6 +46,7 @@ export default function Banner() {
               sm: '100%',  // 80% width on medium screens
               md: 'auto%',  // 60% width on large screens
             },
+            borderRadius: 10,
             fontSize: '1.1rem',
             textTransform: 'none', // to keep the text as it is without uppercase
             '&:hover': {
@@ -56,6 +57,7 @@ export default function Banner() {
           </Button>          
           <Button variant="contained" color="secondary" size="large" sx={{ 
             fontSize: '1.1rem', 
+            borderRadius: 10,
             width: '80%', 
             textTransform: 'none',
             '&:hover': {
