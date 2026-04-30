@@ -1,15 +1,19 @@
 import Navbar from './Navbar';
 import Banner from './Banner';
-import AboutUsLanding from './AboutUs';
 import OurServices from './OurServices';
+import AboutUsLanding from './AboutUs';
+import ContactUs from './ContactUs';
+
 
 function App() {
   return (
     <>
       <Navbar />
       <Banner />
-      <AboutUsLanding />
       <OurServices />
+      <AboutUsLanding />
+      <ContactUs />
+
     </>
   );
 }

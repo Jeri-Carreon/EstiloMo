@@ -83,9 +83,9 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <Box sx={{ px: 4, py: 6, backgroundColor: "#ffffff" }}>
+    <Box sx={{ px: 8, py: 6, backgroundColor: "#fdfcfa" }}>
       
-      <Typography variant="h3" align="center" gutterBottom>
+      <Typography variant="h3" align="center" gutterBottom sx={{ mb: 4 }}>
         Our Services
       </Typography>
 
@@ -95,7 +95,7 @@ export default function ServicesSection() {
             <Paper
               elevation={2}
               sx={{
-                p: 2,
+                p: 3,
                 borderRadius: 2,
               }}
             >
@@ -113,12 +113,13 @@ export default function ServicesSection() {
         <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
             <Button variant="contained" color="secondary" size="large" sx={{
                 width: {
-                xs: '40%', // full width on small screens
-                sm: '20%',  // 80% width on medium screens
-                md: 'auto',  // 60% width on large screens
+                xs: '100%', // width on small screens
+                sm: '60%',  // width on medium screens
+                md: 'auto',  // width on large screens
                 },
+                p: 3,
                 borderRadius: 10,
-                fontSize: '1.1rem',
+                fontSize: '1.2rem',
                 textTransform: 'none', // to keep the text as it is without uppercase
                 '&:hover': {
                         backgroundColor: 'accent.main',
