@@ -58,28 +58,46 @@ export default function BasicGrid() {
           <Item
           sx={{
             width: '100%',
-            height: '80vh',
-            backgroundImage: 'url(/AboutUs1.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            padding: 0,
             display: 'flex',
+            justifyContent: 'center',
             alignItems: 'center',
-            color: 'white',
           }}>
+            <Box
+              component="img"
+              src="/AboutUs1.jpg"
+              alt="About Us"
+              sx={{
+                width: '100%',
+                height: 'auto',
+                maxHeight: '90vh',
+                objectFit: 'contain',
+                display: 'block',
+              }}
+            />
           </Item>
         </Grid>
         <Grid size={{ xs: 12, md: 6 }}>
           <Item
           sx={{
             width: '100%',
-            height: '70vh',
-            backgroundImage: 'url(/AboutUs2.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            padding: 0,
             display: 'flex',
+            justifyContent: 'center',
             alignItems: 'center',
-            color: 'white',
           }}>
+            <Box
+              component="img"
+              src="/AboutUs2.jpg"
+              alt="Barbershop"
+              sx={{
+                width: '100%',
+                height: 'auto',
+                maxHeight: '70vh',
+                objectFit: 'contain',
+                display: 'block',
+              }}
+            />
           </Item>
         </Grid>
         <Grid size={{ xs: 12, md: 6 }}>
@@ -117,16 +135,26 @@ export default function BasicGrid() {
           <Item
           sx={{
             width: '100%',
-            height: '100vh',
-            backgroundImage: 'url(/AboutUs3.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            padding: 0,
             display: 'flex',
+            justifyContent: 'center',
             alignItems: 'center',
-            color: 'white',
           }}>
+            <Box
+              component="img"
+              src="/AboutUs3.jpg"
+              alt="About Us"
+              sx={{
+                width: '100%',
+                height: 'auto',
+                maxHeight: '80vh',
+                objectFit: 'contain',
+                display: 'block',
+              }}
+            />
           </Item>
         </Grid>
+
       </Grid>
     </Box>
     </Container>
