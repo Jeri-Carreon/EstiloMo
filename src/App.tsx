@@ -1,7 +1,6 @@
 import Navbar from './Navbar';
 import Banner from './Banner';
 import AboutUsLanding from './AboutUsLanding';
-import Message from './Message';
 
 function App() {
   return (
@@ -9,7 +8,6 @@ function App() {
       <Navbar />
       <Banner />
       <AboutUsLanding />
-      <Message />
     </>
   );
 }
