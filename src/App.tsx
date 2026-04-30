@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import Banner from './Banner';
-import AboutUsLanding from './AboutUsLanding';
-import ServicesLanding from './ServicesLanding';
+import AboutUsLanding from './AboutUs';
+import OurServices from './OurServices';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <Banner />
       <AboutUsLanding />
-      <ServicesLanding />
+      <OurServices />
     </>
   );
 }
