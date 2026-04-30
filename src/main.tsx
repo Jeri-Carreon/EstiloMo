@@ -13,9 +13,6 @@ const theme = createTheme({
       main: '#fff', // your text color
       contrastText: '#000', // text color on secondary background
     },
-    accent: {
-      main: '#FBBC05', // your accent color
-    },
   },
 });
 
