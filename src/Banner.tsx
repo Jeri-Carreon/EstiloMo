@@ -3,7 +3,6 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import { WidthFull } from '@mui/icons-material';
 
 
 export default function Banner() {
@@ -21,7 +20,7 @@ export default function Banner() {
       }}
     >
       <Container maxWidth="lg">
-        <Typography variant="h2" fontWeight="bold">
+        <Typography variant="h1" sx={{ fontWeight: 'bold' }}>
           The Barbs Bro
         </Typography>
 
